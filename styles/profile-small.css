@@ -61,9 +61,10 @@ h4 {
   font-size: 12px;
 }
 
-span {
+a {
   user-select: text;
   color: #c0eb75;
+  text-decoration: none;
 }
 
 .text {
