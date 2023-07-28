@@ -51,6 +51,21 @@ footer {
   justify-content: space-between;
 }
 
+h4 {
+  color: #82c7b2;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 280px;
+  user-select: none;
+  font-size: 12px;
+}
+
+span {
+  user-select: text;
+  color: #c0eb75;
+}
+
 .text {
   color: #96f2d7;
   font-size: 9px;
