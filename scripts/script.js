@@ -25,16 +25,20 @@ console.log(itemsArray);
 // Events
 btnAdd.addEventListener("click", () => {
   inputContainer.classList.remove("hidden");
+  window.scrollTo(0, 0);
+  document.body.style.overflow = "hidden";
 });
 
 btnClose.addEventListener("click", () => {
   inputContainer.classList.add("hidden");
   noteTitle.value = "";
+  document.body.style.overflow = "";
 });
 
 btnDone.addEventListener("click", () => {
   const noteTitle = document.querySelector(".note-title");
   !noteTitle.value ? alert("Please fill the box") : createItem(noteTitle);
+  document.body.style.overflow = "";
 });
 
 // functions
